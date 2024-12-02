@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: rgb(250, 243, 234);
+    height: 60px;
+}
+nav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 16px;
+    margin: 10px 20px 0px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, width 0.3s ease, border-radius 0.3s ease;
+}
+nav a:hover {
+    border-radius: 30px;
+    background-color:  rgb(219, 186, 141);
+    color: white;
+}
+.nav-right {
+    float: right;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 10px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 10px 20px 0px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, width 0.3s ease, border-radius 0.3s ease;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.huellita{
+    margin: 0;
+    padding: 20px;
+}
+
+footer {
+    background-color: rgb(250, 243, 234);
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer-content p {
+    margin: 0;
+    color: #333;
+}
+.social-media {
+    margin-top: 10px;
+}
+.social-media a {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+.social-media a:hover {
+    color: #4ac69c;
+}
