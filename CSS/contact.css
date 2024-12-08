@@ -1,0 +1,174 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0; 
+    color: #333; 
+}
+
+nav {
+    background-color: rgb(250, 243, 234);
+    height: 60px;
+}
+nav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 10px 16px;
+    margin: 10px 20px 0px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, width 0.3s ease, border-radius 0.3s ease;
+}
+nav a:hover {
+    border-radius: 30px;
+    background-color:  rgb(219, 186, 141);
+    color: white;
+}
+
+
+.huellita{
+    margin: 0;
+    padding: 20px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(219, 186, 141);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    
+}
+
+.contact-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.contact-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.contact-text h1 {
+    color: rgb(219, 186, 141);
+    font-size: 2rem;
+}
+
+.contact-info {
+    margin-top: 15px;
+}
+
+.contact-info h2{
+    color: rgb(219, 186, 141);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.contact-info p{
+    margin: 5px 0;
+}
+
+
+.form-section {
+    text-align: center;
+    
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(219, 186, 141);
+    border-radius: 5px;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    background-color: rgb(219, 186, 141);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+    width: 400px;
+    margin: 0 auto;
+    
+}
+
+button:hover {
+    background-color: rgb(188, 158, 120);
+}
+
+footer {
+    background-color: rgb(250, 243, 234);
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer-content p {
+    margin: 0;
+    color: #333;
+}
+.social-media {
+    margin-top: 10px;
+}
+.social-media a {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-media a :hover{
+    color: #4ac69c;
+}
