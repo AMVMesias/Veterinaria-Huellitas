@@ -1,0 +1,139 @@
+:root {
+    --primary-color: rgb(238, 185, 116);
+    --secondary-color: #61a5c2;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    animation: slideDown 0.8s ease;
+}
+
+nav {
+    background-color: rgb(250, 243, 234);
+    height: 60px;
+}
+nav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 10px 16px;
+    margin: 10px 20px 0px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, width 0.3s ease, border-radius 0.3s ease;
+}
+nav a:hover {
+    border-radius: 30px;
+    background-color:  rgb(219, 186, 141);
+    color: white;
+}
+
+
+.huellita{
+    margin: 0;
+    padding: 20px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.service-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: rgb(250, 243, 234);
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer-content p {
+    margin: 0;
+    color: #333;
+}
+
+
+.footer-content p {
+    margin: 0;
+    color: #333;
+}
+.social-media {
+    margin-top: 10px;
+}
+.social-media a {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-media a :hover{
+    color: #4ac69c;
+}
+
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
