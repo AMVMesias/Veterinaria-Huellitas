@@ -80,11 +80,12 @@ footer {
 
 .home-container i {
     font-size: 5rem; 
-    color: #333; 
+    color: #333;
+    transition: font-size 0.3s ease; 
 }
 
 .home-container i:hover {
-    animation: heartBeat 1s;
+    font-size: 7rem;
 }
 
 .icon-txt {
@@ -93,9 +94,23 @@ footer {
     text-align: center; 
 }
 
-
 .cat{
     position: fixed;
     bottom: 10%;
-    right: 2%;
+    right: -15px;
+    text-align: end;
+}
+
+
+.cart-info {
+    position: fixed;
+    bottom: 21%;
+    right: 0%;
+    background-color: #f8f8f8c4;
+    padding: 20px;
+    width: 140px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 70px;
+    text-align: center;
+    margin-bottom: 0;
 }
