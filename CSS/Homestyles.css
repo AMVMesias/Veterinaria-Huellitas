@@ -94,13 +94,18 @@ footer {
     text-align: center; 
 }
 
-.cat{
+
+.devs{
+    text-decoration: none;
+    color: brown;
+}
+
+.cat {
     position: fixed;
     bottom: 10%;
     right: -15px;
     text-align: end;
 }
-
 
 .cart-info {
     position: fixed;
@@ -112,10 +117,58 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 70px;
     text-align: center;
-    margin-bottom: 0;
 }
 
-.devs{
-    text-decoration: none;
-    color: brown;
+.chat-popup {
+    position: fixed;
+    bottom: 28%;
+    right: 2px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+    background-color: #e0b76a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.chat-header  {
+    color: white;
+
+}
+
+.chat-messages {
+    height: 200px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    height: 25px;   
+
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+    flex-grow: 1;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.chat-input button {
+    background-color: #a86539;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
 }
