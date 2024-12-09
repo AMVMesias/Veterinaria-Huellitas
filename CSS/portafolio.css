@@ -166,3 +166,10 @@ footer {
     text-decoration: none;
     color: rgb(219, 186, 141) ;
 }
+
+li{
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}

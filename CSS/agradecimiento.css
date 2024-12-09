@@ -15,7 +15,7 @@ body{
     margin-top: 40px;
     height: 500px;
     background: rgb(240,246,93);
-background: linear-gradient(90deg, rgba(240,246,93,0.9579481450783438) 22%, rgba(254,232,118,1) 43%, rgba(182,124,41,1) 93%);
+    background: linear-gradient(90deg, rgba(240,246,93,0.9579481450783438) 22%, rgba(254,232,118,1) 43%, rgba(182,124,41,1) 93%);
     width:700px ;
     margin-top:  15vh;
     animation: zoomInUp 1s ease-in-out, heartbeat 1s ease-in-out infinite;
