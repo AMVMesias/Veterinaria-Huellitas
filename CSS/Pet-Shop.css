@@ -17,7 +17,37 @@
         top: 0;
         left: 0;
         z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+    header a {
+        position: absolute;
+        left: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    
+    header i {
+        color: #205223;
+        transition: all 0.3s ease-in-out;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header i:hover {
+        border-radius: 50%;
+        background-color: #79ce7e;
+        color: white;
+        transform: scale(1.2);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    
 
     #nav-petshop {
         background-color: #ffffff;
