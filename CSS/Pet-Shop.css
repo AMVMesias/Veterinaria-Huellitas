@@ -50,7 +50,11 @@
     
 
     #nav-petshop {
-        background-color: #ffffff;
+        /*background-color: #ffffffa9;*/
+        background-color: rgb(223, 206, 184);
+        /*background-color: rgb(220, 230, 240);*/
+        /*background-color: rgb(230, 245, 234);*/
+        /*background-color: rgb(240, 240, 240);*/
         color: rgb(3, 3, 3);
         width: 250px;
         height: 100vh;
@@ -59,6 +63,32 @@
         left: 0;
         padding-top: 5rem;
     }
+
+    #nav-principal {
+        /*padding: 1rem;*/
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: rgb(250, 243, 234);
+        height: 60px;
+    }
+    #nav-principal a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 10px 16px;
+        margin: 10px 20px 0px 20px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, color 0.3s ease, width 0.3s ease, border-radius 0.3s ease;
+    }
+    #nav-principal a:hover {
+        border-radius: 30px;
+        background-color:  rgb(219, 186, 141);
+        color: white;
+    }
+    
 
     #list-products{
         text-align: center; 
@@ -77,8 +107,11 @@
     }
 
     #list-products li a:hover {
-        background-color: rgb(204, 255, 204); 
-        color: green;
+        background-color: rgb(202, 188, 164); 
+        color: rgb(255, 255, 255);
+        /*suavidad */
+        transition: background-color 0.3s ease, color 0.3s ease; 
+        border-radius: 5px; 
     }
 
     #main-container{
@@ -86,6 +119,7 @@
         position: relative;
         overflow: auto;
         padding: 0;
+        padding-bottom: 15vh;
     }
 
     /* Contenido principal */
@@ -111,7 +145,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        background-color: #ddedce;
+        background-color: rgb(240, 240, 240);
         padding: 10px;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -130,11 +164,11 @@
 
     .container-productos {
         display: flex;
-        flex-wrap: wrap; /* Permite que las tarjetas se ajusten automáticamente */
-        gap: 20px; /* Espaciado uniforme entre tarjetas */
-        justify-content: center; /* Centra las tarjetas horizontalmente */
+        flex-wrap: wrap; 
+        gap: 20px; 
+        justify-content: center; 
         padding: 5vh;
-        margin: 0 auto; /* Centra el contenedor en la página */
+        margin: 0 auto; 
     }
 
     /* Estilo para el botón de compra */
@@ -142,8 +176,8 @@
         display: none; /* Oculto por defecto */
         position: absolute;
         bottom: 65px;
-        background-color: #4CAF50;
-        color: white;
+        background-color: rgb(197, 185, 170);
+        color: black;
         padding: 10px 20px;
         border: none;
         border-radius: 5px;
@@ -157,7 +191,10 @@
     }
 
     .container-product:hover .buy-btn:hover {
-        background-color: #205223;
+        background-color: rgb(202, 188, 164); 
+            color: rgb(255, 255, 255);
+        /*suavidad */
+        transition: background-color 0.3s ease, color 0.3s ease;    
     }
 
     .container-product:hover .img-product {
@@ -196,85 +233,62 @@
     }
 
 
-    /* ~TABLA DETALLES ~*/
-    .purchase-container {
-        background-color: rgb(213, 235, 234);
-        padding: 20px;
-        /*border-radius: 10px;*/
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        /*width: 1000%;*/
-        
-        overflow-x:scroll;
-        text-align: center;
-        border: 0;
-        margin: 15px;
-    }
-    
-    .purchase-container h2 {
-        font-size: 1.8rem;
-        margin-bottom: 20px;
-        color: #1a4c1c;
-    }
-    
-    .purchase-table {
-        width: 100%;
-        max-width: 800px;
-        border-collapse: collapse;
-        margin: 0 auto;
-    }
-    
-    .purchase-table th, .purchase-table td {
-        padding: 10px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-        
-        flex-wrap: wrap;
-    }
-    
-    .purchase-table th {
-        background-color: #4CAF50;
-        color: white;
-        text-align: center;
-    }
-    
-    .purchase-table tbody tr:hover {
-        background-color: #f2f2f2;
-    }
-    
-    .purchase-table tfoot {
-        background-color: #ddedce;
-    }
-    
-    .purchase-table .total-label {
-        font-weight: bold;
-        text-align: right;
-        padding-right: 20px;
-    }
-    
-    .purchase-table .total-amount {
-        font-weight: bold;
-        color: #4CAF50;
-        text-align: center;
-    }
+/* ~TABLA DETALLES ~*/
+.purchase-container {
+    background-color: rgb(245, 245, 250);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: scroll;
+    text-align: center;
+    border: 0;
+    margin: 15px;
+}
 
-    .pay-btn {
-        background-color: #4CAF50;
-        font-size: 1.1rem;
-        padding: 10px 20px;
-        margin: 0;
-        border: none;
-        border-radius: 1cqw;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        a{
-            color: white;
-            text-decoration: none;
-        }
-    }
+.purchase-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: rgb(85, 85, 122);
+}
 
-    .pay-btn:hover {
-        background-color: #205223;
-    }
+.purchase-table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.purchase-table th, .purchase-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid rgb(210, 210, 230);
+}
+
+.purchase-table th {
+    background-color: rgb(116, 125, 174);
+    color: white;
+    text-align: center;
+}
+
+.purchase-table tbody tr:hover {
+    background-color: rgb(230, 230, 245);
+}
+
+.purchase-table tfoot {
+    background-color: rgb(230, 239, 219);
+}
+
+.purchase-table .total-label {
+    font-weight: bold;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.purchase-table .total-amount {
+    font-weight: bold;
+    color: rgb(116, 125, 174);
+    text-align: center;
+}
+
 
 
     button {
@@ -291,13 +305,18 @@
         }
     }
 
+/* ~Pagar Tabla~*/
 #pay_ {
     background-color: #28a745; 
-    color: white;
 }
 
 #pay_:hover {
-    background-color: #218838;
+    background-color: #34c555; 
+    a{
+        color: rgb(255, 255, 255);
+    /*suavidad */
+    transition: background-color 0.3s ease, color 0.3s ease;    
+    }
 }
 
 #cancel-pay_ {
@@ -352,6 +371,32 @@
         color: #333;
         margin-bottom: 15px;
     }
+
+    /* ~Boton de Pagar de el aside~*/
+    .pay-btn {
+        background-color: rgb(197, 185, 170);
+        font-size: 1.1rem;
+        padding: 10px 20px;
+        margin: 0;
+        border: none;
+        border-radius: 1cqw;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    }
+
+    .pay-btn:hover {
+        background-color: rgb(202, 188, 164); 
+        a{
+            color: rgb(255, 255, 255);
+        /*suavidad */
+        transition: background-color 0.3s ease, color 0.3s ease;    
+        }
+    }
+
 
     /* LOGIN EMERGENTE*/
 
@@ -431,3 +476,42 @@
 }
 
 
+/* ~Footer~*/
+
+footer {
+    position: relative;
+    background-color: rgb(250, 243, 234);
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin: 0;
+    color: #333;
+}
+
+.social-media {
+    margin-top: 10px;
+    padding: 0;
+    /*width: 100%;*/
+}
+
+.social-media a {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #4ac69c;
+}
