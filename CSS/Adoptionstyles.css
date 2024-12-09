@@ -69,8 +69,10 @@ nav a:hover {
 
 .icons {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap; 
+  justify-content: center; 
   align-items: center;
+  gap: 10px; 
   width: 100%;
   padding: 0 20px;
   margin-bottom: 20px;
@@ -94,15 +96,13 @@ nav a:hover {
 }
 
 .animal-txt {
-  flex-basis: 50%; 
-  max-width: 200px; 
-  height: 100%; 
+  flex-basis: 50%;
+  max-width: 300px;
+  height: auto; 
   text-align: left;
-  overflow: hidden; 
-  text-overflow: ellipsis; 
   display: flex;
-  flex-direction: column; 
-  justify-content: space-between; 
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .animal-txt span {
@@ -121,13 +121,12 @@ nav a:hover {
   font-size: 14px;
   color: #333;
   line-height: 1.4;
-  overflow: hidden; 
-  max-height: 4.2em; 
 }
+
 
 .animal-img {
   flex-basis: 50%;
-  max-width: 450px; 
+  max-width: 300px; 
   height: 100%;
   text-align: center;
   display: flex;
@@ -150,6 +149,7 @@ nav a:hover {
   color: rgb(219, 186, 141);
   border-radius: 25px;
   text-decoration: none;
+  margin-top: 100px;
 }
 
 footer {
@@ -191,28 +191,28 @@ footer {
     transform: translateX(0%);
   }
   20% {
-    transform: translateX(-100%);
+    transform: translateX(-103%);
   }
   30% {
-    transform: translateX(-100%);
+    transform: translateX(-103%);
   }
   40% {
-    transform: translateX(-200%);
+    transform: translateX(-207%);
   }
   50% {
-    transform: translateX(-200%);
+    transform: translateX(-207%);
   }
   60% {
-    transform: translateX(-300%);
+    transform: translateX(-310%);
   }
   70% {
-    transform: translateX(-300%);
+    transform: translateX(-310%);
   }
   80% {
-    transform: translateX(-400%);
+    transform: translateX(-413%);
   }
   90% {
-    transform: translateX(-400%);
+    transform: translateX(-413%);
   }
   100% {
     transform: translateX(0%);
