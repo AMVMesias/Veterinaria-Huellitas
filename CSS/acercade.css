@@ -66,6 +66,7 @@ header{
 nav {
     background-color: rgb(250, 243, 234);
     height: 60px;
+    width: 100%;
 }
 nav a {
     float: left;
@@ -84,7 +85,7 @@ nav a:hover {
 
 .imghome{
     height: 450px;
-    background-image: url(/image/Home.png);
+    background-image: url(/Image/Home.png);
     background-size: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -96,6 +97,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     border-top: 1px solid #ddd;
+    width: 100%;
 }
 .footer-content {
     max-width: 1200px;
@@ -119,4 +121,16 @@ footer {
 
 .social-media a :hover{
     color: #4ac69c;
+}
+
+.devs{
+    text-decoration: none;
+    color: rgb(219, 186, 141) ;
+}
+
+li{
+    a{
+        text-decoration: none;
+        color: white;
+    }
 }

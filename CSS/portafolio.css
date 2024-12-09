@@ -36,7 +36,6 @@ nav a:hover {
     padding: 20px;
 }
 
-
 .galeria {
     flex: 1; 
     display: flex;
@@ -44,7 +43,7 @@ nav a:hover {
     align-items: center;
     padding: 20px;
     position: relative;
-    left: 30%;
+    left: 25%;
 }
 
 section {
