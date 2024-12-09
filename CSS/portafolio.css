@@ -49,8 +49,8 @@ nav a:hover {
 
 section {
     display: flex;
-    width: 600px;
-    height: 430px;
+    width: 700px;
+    height: 700px;
 }
 
 .image-container {
@@ -95,6 +95,11 @@ section {
     opacity: 0;
     transition: opacity 0.5s ease;
     padding: 10px;
+}
+
+.overlay a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .image-container:hover .overlay {
